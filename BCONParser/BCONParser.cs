@@ -74,7 +74,7 @@
         /// </summary>
         private static dynamic ExtractValue(string line, BCONConfig config)
         {
-            if (line.Contains("="))
+            if (config.ValueSeperator.Any(line.Contains) || config.PropertySeperator.Any(line.Contains))
             {
                 dynamic obj = new ExpandoObject();
                 string[] parameters = line.Split(config.PropertySeperator, StringSplitOptions.RemoveEmptyEntries);
