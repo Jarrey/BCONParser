@@ -2,15 +2,15 @@ A custom configuration file reader/parser class: Call BCON configuration
 
 Example:
 
-###############################################################################
-# This is comment
-###############################################################################
+\###############################################################################
+\# This is comment
+\###############################################################################
 
-[Persons]
+\[Persons]
 Name=John William,Age=23,Country=US
 Name:Le Seng|Age=32|Country=CN,Company=MS
 
-[Products]
+\[Products]
 Office 2013
 Windows 8.1
 Windows Phone 8.1
